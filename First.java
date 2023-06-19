@@ -6,18 +6,21 @@ public class First {
         // task2();
         // task3();
         //task4();
-        //task5();
+        task5();
     }
 
     private static void task5() {
-        String str = "Добро пожаловать на курс по Java";
-        String[] Arr = str.split(" ");
-        for (int i = 0; i < Arr.length; i++) {
-            Arr[i] = Arr[-(i + 1)];
+        String sourceLn = "Добро пожаловать в Java";
+        System.out.println(sourceLn);
+        String[] splitLn = sourceLn.split(" ");
+        String outLn = "";
+        for(int i = splitLn.length-1; i>=0; i--)
+        {
+            outLn = outLn+splitLn[i]+" ";
         }
-        System.out.println(Arr);
-
+        System.out.println(outLn);
     }
+    
 
 
 
